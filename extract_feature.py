@@ -99,7 +99,7 @@ def start():
 if __name__ == '__main__':
 
     parser = argparse.ArgumentParser(prog='Feature extractor')
-    parser.add_argument('--source', default='data/ex.tsv', help='Path to the source metadata file')
+    parser.add_argument('--source', default='data/name_list.tsv', help='Path to the source metadata file')
     parser.add_argument('--model', default='ResNet50', nargs="?", type=named_model, help='Name of the pre-trained model to use')
 
     pargs = parser.parse_args()
